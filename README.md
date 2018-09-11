@@ -17,7 +17,7 @@ Créer nouvelle page => dans DefautController.php (pour une page news par exempl
     
  - Liens pour les assets : 
  
-    "<img src="{{ asset('images/logo.png') }}" alt="Symfony!" />"
+    "src="{{ asset('images/logo.png') }}"
     
 - NPM start ----> remplace le gulp
 
