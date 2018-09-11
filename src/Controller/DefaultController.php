@@ -22,4 +22,5 @@ class DefaultController extends AbstractController
     {
         return $this->render('default/news.html.twig');
     }
+
 }
