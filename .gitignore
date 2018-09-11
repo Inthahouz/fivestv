@@ -17,3 +17,9 @@
 
 # PHPStorm
 .idea
+
+# Generated assets
+/public/dist
+
+# Node modules
+/node_modules
