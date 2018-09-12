@@ -5,13 +5,30 @@
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('dist/css/main.css') }}">
+        {#<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">#}
     {% endblock %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<aside id="menu">
+        <a href="" class="logo">Five'sTV</a>
+        <ul class="list">
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">Qui sommes-nous</a></li>
+            <li><a href="#">Nos Streamers</a></li>
+        </ul>
+</aside>
+
+
 {% block body %}{% endblock %}
+
+
+
+
+
 {% block javascripts %}
     <script src="{{ asset('dist/js/main.js') }}"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 {% endblock %}
 </body>
 </html>
