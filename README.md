@@ -1,4 +1,4 @@
--Lancer le server => serv:run
+-Lancer le server => php bin/console server:run
 
 -Help => php bin/console
 
@@ -17,7 +17,7 @@ Créer nouvelle page => dans DefautController.php (pour une page news par exempl
     
  - Liens pour les assets : 
  
-    "src="{{ asset('images/logo.png') }}"
+    src="{{ asset('images/logo.png') }}"
     
 - NPM start ----> remplace le gulp
 
