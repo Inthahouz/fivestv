@@ -5,20 +5,23 @@
 -BDD => fivestv (avec MAMP)
 
 Créer nouvelle page => dans DefautController.php (pour une page news par exemple )
+```php
   /**
-       * @Route("/news", name="news")
-       */
-      public function news()
-      {
-          return $this->render('default/news.html.twig');
-      }
-      
-    Path pour les routes : <a href="{{ path('news)}}">News</a>
+  * @Route("/news", name="news")
+  */
+  public function news()
+  {
+      return $this->render('default/news.html.twig');
+  }
+```
+Path pour les routes : <a href="{{ path('news)}}">News</a>
     
  - Liens pour les assets : 
  
-    src="{{ asset('images/logo.png') }}"
-    
+```html
+    <img src="{{ asset('images/logo.png') }}" />
+```    
+
 - NPM start ----> remplace le gulp
 
 - Montrer le site => /ngrok run build 8000
