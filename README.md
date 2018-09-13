@@ -1,4 +1,4 @@
--Lancer le server => php bin/console server:run
+-Lancer le server => php bin/console server:run (URL donnée dans la console)
 
 -Help => php bin/console
 
