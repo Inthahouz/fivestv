@@ -21,6 +21,7 @@ $primary-invert: $pink-invert;
 // 4. Import the rest of Bulma
 */
 @import "../../../node_modules/bulma/bulma";
+@import "../../../node_modules/bulma-extensions/bulma-carousel/src/sass/index";
 
 aside{
   background: red;
@@ -30,10 +31,11 @@ aside{
   left: 0;
   width: 200px;
   height: 100vh;
+
 }
 
 section{
-  background: green;
+  //background: green;
   min-height: 100vh;
   margin-left: 200px;
   position: relative;
@@ -42,9 +44,12 @@ section{
   flex-direction: column;
 }
 
-//article{ padding: 40px }
+article{
+  background: deepskyblue;
+  min-height: 100vh;
+}
 
 footer{
   background: blue;
-  margin-left: 200px;
+  //margin-left: 200px;
 }
