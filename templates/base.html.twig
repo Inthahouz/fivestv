@@ -10,21 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<aside id="menu">
-        <a href="" class="logo">Five'sTV</a>
-        <ul class="list">
-            <li><a href="#">Acceuil</a></li>
-            <li><a href="#">Qui sommes-nous</a></li>
-            <li><a href="#">Nos Streamers</a></li>
-        </ul>
-</aside>
+    <aside>nav</aside>
 
 
-{% block body %}{% endblock %}
-
-
-
-
+    <section>
+        {% block body %}{% endblock %}
+        <footer>footer</footer>
+    </section>
 
 {% block javascripts %}
     <script src="{{ asset('dist/js/main.js') }}"></script>
