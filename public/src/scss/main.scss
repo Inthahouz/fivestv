@@ -24,20 +24,18 @@ $primary-invert: $pink-invert;
 @import "../../../node_modules/bulma-extensions/bulma-carousel/src/sass/index";
 
 aside{
-  background: red;
-  position: fixed;
+  background: yellow;
   z-index: 2;
   top: 0;
-  left: 0;
+  left: 100%;
   width: 200px;
   height: 100vh;
-
+  display: none;
 }
 
 section{
   //background: green;
   min-height: 100vh;
-  margin-left: 200px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -49,7 +47,13 @@ article{
   min-height: 100vh;
 }
 
+//CAROUSEL
+
+#carousel {
+    max-height: 50vh;
+  }
+
+
 footer{
   background: blue;
-  //margin-left: 200px;
 }
