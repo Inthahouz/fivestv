@@ -22,6 +22,16 @@ $primary-invert: $pink-invert;
 */
 @import "../../../node_modules/bulma/bulma";
 @import "../../../node_modules/bulma-extensions/bulma-carousel/src/sass/index";
+@import "../../../node_modules/bulma-extensions/bulma-accordion/src/sass/index";
+
+header{
+
+  .logo{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
 
 aside{
   background: yellow;
@@ -34,25 +44,79 @@ aside{
 }
 
 section{
+  display: block
   //background: green;
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  //min-height: 100vh;
+  //position: relative;
+  //overflow: hidden;
+  //display: flex;
+  //flex-direction: column;
 }
 
 article{
-  background: deepskyblue;
-  min-height: 100vh;
+  background: #000;
+  //min-height: 100vh;
 }
 
 //CAROUSEL
 
-#carousel {
+.carousel {
+
+  .carousel-container {
     max-height: 50vh;
   }
+}
 
+//TWITCH
+
+
+iframe{
+  width: 100%;
+  height: auto;
+  min-height: 780px;
+}
+
+.stream-links{
+  font-size: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background: #2e2e2ef2;
+  padding: 20px;
+
+  li{
+    font-size: 14px;
+    text-align: center;
+    margin: 10px;
+    width: calc((100% / 4) - 20px);
+  }
+
+ a{
+   text-decoration: none;
+   color: #fff;
+
+   h2{
+     width: 100%;
+     display: block;
+     border: 1px solid #fff;
+     padding: 10px;
+     text-transform: uppercase;
+     //color: #fff;
+   }
+
+   span{
+     display: block;
+     margin-top: 10px;
+     text-align: left;
+     //color: #fff;
+   }
+ }
+}
+
+
+//FOOTER
 
 footer{
   background: blue;

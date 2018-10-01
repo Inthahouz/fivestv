@@ -4,33 +4,107 @@
 
 {% block body %}
     <article>
-        <div class='hero-carousel carousel-animated carousel-animate-fade'>
-            <div class='carousel-container' id="carousel">
+        <div class='carousel carousel-animated carousel-animate-fade' data-autoplay="true">
+            <div class='carousel-container'>
                 <div class='carousel-item has-background is-active'>
-                    <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg">
-                    <div class="title">Merry Christmas</div>
+                    <a href="https://server.nitrado.net/fre/location-de-serveur-de-jeux" target="_blank">
+                        <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg">
+                        {#<div class="title">Nitrado</div>#}
+                    </a>
                 </div>
                 <div class='carousel-item has-background'>
-                    <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="">
-                    <div class="title">Original Gift: Offer a song with <a href="https://lasongbox.com" target="_blank">La Song Box</a></div>
+                    <a href="http://www.ouikos.com/fr/129-fives-tv" target="_blank">
+                        <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="">
+                        {#<div class="title">Ouikos</div>#}
+                    </a>
                 </div>
                 <div class='carousel-item has-background'>
-                    <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg">
-                    <div class="title">Sushi time</div>
+                    <a href="https://www.instant-gaming.com/en/?igr=FivesTv" target="_blank">
+                        <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg">
+                        {#<div class="title">Instant Gaming</div>#}
+                    </a>
                 </div>
                 <div class='carousel-item has-background'>
-                    <img class="is-background" src="https://wikiki.github.io/images/life.jpg">
-                    <div class="title">Life</div>
+                    <a href="https://qanga.iolacorp.com/">
+                        <img class="is-background" src="https://wikiki.github.io/images/life.jpg">
+                        {#<div class="title">Qanga</div>#}
+                    </a>
                 </div>
             </div>
-            <div class="carousel-navigation">
-                <div class="carousel-nav-left">
-                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                </div>
-                <div class="carousel-nav-right">
-                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                </div>
-            </div>
+            {#<div class="carousel-navigation">#}
+                {#<div class="carousel-nav-left">#}
+                    {#<i class="fa fa-chevron-left" aria-hidden="true"></i>#}
+                {#</div>#}
+                {#<div class="carousel-nav-right">#}
+                    {#<i class="fa fa-chevron-right" aria-hidden="true"></i>#}
+                {#</div>#}
+            {#</div>#}
         </div>
+
+        <section class="twitch-player">
+            <iframe src="https://embed.twitch.tv?channel=fivestv&amp;theme=dark&amp;referrer=https%3A%2F%2Ffivestv.fr%2F"
+                    allowfullscreen="" scrolling="no" frameborder="0" allow="autoplay; fullscreen"></iframe>
+        </section>
+
+        <section>
+            {#<div class="container">#}
+            <ul class="stream-links">
+                <li><a href="https://www.twitch.tv/products/fivestv/ticket" target="_blank">
+                        <h2>subscribe</h2>
+                        <span>Abonne-toi et obtiens plein d'avantage !</span>
+                    </a></li>
+                <li><a href="https://www.twitch.tv/bits" target="_blank">
+                        <h2>bits and badges</h2>
+                        <span>Soutien l'association, passe ton message en live et gagne des badges sur le chat !</span>
+                    </a></li>
+                <li><a href="https://streamlabs.com/fivestv" target="_blank">
+                        <h2>donation</h2>
+                        <span>Démontre ton soutien pour MrFive et contribue à la mise en place de ses projets !</span>
+                    </a></li>
+                <li><a href="https://www.twitch.tv/fivestv/videos/all" target="_blank">
+                        <h2>replay live</h2>
+                        <span>Accède aux rediffusions instantannées des lives !</span>
+                    </a></li>
+            </ul>
+            {#</div>#}
+        </section>
+
+        <section class="section">
+            <section class="accordions">
+                <article class="accordion is-active">
+                    <div class="accordion-header toggle">
+                        <p>Hello World</p>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                        </div>
+                    </div>
+                </article>
+                <article class="accordion">
+                    <div class="accordion-header">
+                        <p>Hello World</p>
+                        <button class="toggle" aria-label="toggle"></button>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                        </div>
+                    </div>
+                </article>
+                <article class="accordion">
+                    <div class="accordion-header">
+                        <p>Hello World</p>
+                        <button class="toggle" aria-label="toggle"></button>
+                    </div>
+                    <div class="accordion-body">
+                        <div class="accordion-content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+        </section>
     </article>
 {% endblock %}
