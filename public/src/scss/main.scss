@@ -30,6 +30,7 @@ header{
   //flex-direction: row;
   //align-items: center;
   position: relative;
+  padding:  10px 0;
 
   .logo{
     width: 203px;
@@ -65,13 +66,25 @@ aside{
 }
 
 section{
-  display: block
+
+  display: block;
   //background: green;
   //min-height: 100vh;
   //position: relative;
   //overflow: hidden;
   //display: flex;
   //flex-direction: column;
+
+  &.grey{
+    background: #2e2e2ef2;
+  }
+}
+
+.section{
+
+  &.no-padding{
+    padding: 0 20px;
+  }
 }
 
 article{
@@ -141,4 +154,45 @@ iframe{
 
 footer{
   background: #000;
+
+  .top-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottom-footer{
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .absolute{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+
+    &.left{
+      right: auto;
+      left: 0;
+    }
+  }
+
+  .link{
+   text-align: center;
+  }
+
+  .carousel-footer{
+    width: 200px;
+    height: 180px;
+    margin-right: 15px;
+  }
+
+  .list-footer{
+    display: flex;
+    flex-direction: row;
+  }
 }
+
+

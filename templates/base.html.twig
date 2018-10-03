@@ -67,14 +67,14 @@
     </div>
 </header>
 {#<aside>#}
-    {#<nav>#}
-        {#<a href=""></a>#}
-        {#<ul class="">#}
-            {#<li><a href="#">Accueil</a></li>#}
-            {#<li><a href="#">Qui sommes nous</a></li>#}
-            {#<li><a href="#">Nos streamers</a></li>#}
-        {#</ul>#}
-    {#</nav>#}
+{#<nav>#}
+{#<a href=""></a>#}
+{#<ul class="">#}
+{#<li><a href="#">Accueil</a></li>#}
+{#<li><a href="#">Qui sommes nous</a></li>#}
+{#<li><a href="#">Nos streamers</a></li>#}
+{#</ul>#}
+{#</nav>#}
 {#</aside>#}
 
 <section>
@@ -82,43 +82,98 @@
 </section>
 
 
-<footer class="section">
-    <section class="container">
-        <div classs="top-footer">
-            <a href=""><img src="{{ asset('images/logo-full.png') }}" alt="Logo Five'sTV"></a>
-            {#<div class="carousel-block">#}
-                {#<div class='carousel carousel-animated carousel-animate-fade' data-autoplay="true">#}
-                    {#<div class='carousel-container'>#}
-                        {#<div class='carousel-item has-background is-active'>#}
-                            {#<a href="https://server.nitrado.net/fre/location-de-serveur-de-jeux" target="_blank">#}
-                                {#<img class="is-background" src="{{ asset('images/banner-1.jpg') }}" alt="Nitrado">#}
-                                {#<div class="title">Nitrado</div>#}
-                            {#</a>#}
-                        {#</div>#}
-                        {#<div class='carousel-item has-background'>#}
-                            {#<a href="http://www.ouikos.com/fr/129-fives-tv" target="_blank">#}
-                                {#<img class="is-background" src="{{ asset('images/banner-2.jpg') }}" alt="Ouikos">#}
-                                {#<div class="title">Ouikos</div>#}
-                            {#</a>#}
-                        {#</div>#}
-                        {#<div class='carousel-item has-background'>#}
-                            {#<a href="https://www.instant-gaming.com/en/?igr=FivesTv" target="_blank">#}
-                                {#<img class="is-background" src="{{ asset('images/banner-3.jpg') }}" alt="Instant Gaming">#}
-                                {#<div class="title">Instant Gaming</div>#}
-                            {#</a>#}
-                        {#</div>#}
-                        {#<div class='carousel-item has-background'>#}
-                            {#<a href="https://qanga.iolacorp.com/">#}
-                                {#<img class="is-background" src="{{ asset('images/banner-4.jpg') }}" alt="Qanga">#}
-                                {#<div class="title">Qanga</div>#}
-                            {#</a>#}
-                        {#</div>#}
-                    {#</div>#}
-                {#</div>#}
-            {#</div>#}
+<footer class="section no-padding">
+    {#<section class="container">#}
+    <div class="top-footer">
+        <a href=""><img src="{{ asset('images/logo-full.png') }}" alt="Logo Five'sTV"></a>
+        <div class="carousel-footer">
+            <div class='carousel carousel-animated carousel-animate-fade' data-autoplay="true">
+                <div class='carousel-container'>
+                    <div class='carousel-item has-background is-active'>
+                        <a href="https://server.nitrado.net/fre/location-de-serveur-de-jeux" target="_blank">
+                            <img class="is-background" src="{{ asset('images/nitrado.png') }}" alt="Nitrado">
+                        </a>
+                    </div>
+                    <div class='carousel-item has-background'>
+                        <a href="http://www.ouikos.com/fr/129-fives-tv" target="_blank">
+                            <img class="is-background" src="{{ asset('images/ouikos.png') }}" alt="Ouikos">
+                        </a>
+                    </div>
+                    <div class='carousel-item has-background'>
+                        <a href="https://www.instant-gaming.com/en/?igr=FivesTv" target="_blank">
+                            <img class="is-background" src="{{ asset('images/instant-gaming.png') }}"
+                                 alt="Instant Gaming">
+                        </a>
+                    </div>
+                    <div class='carousel-item has-background'>
+                        <a href="https://qanga.iolacorp.com/">
+                            <img class="is-background" src="{{ asset('images/qanga.png') }}" alt="Qanga">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div classs="bottom-footer">B</div>
-    </section>
+    </div>
+    <div class="bottom-footer">
+        <ul class="list-footer absolute left">
+            <li><a href="#">Contact Professionel</a></li>
+            {#<li><a href="">Signaler</a></li>#}
+            <li><a href="#">Crédits</a></li>
+        </ul>
+        <a href="#" class="link">Copyright Five’sTv</a>
+        <ul class="list-footer absolute">
+            <li>
+                <a href="https://www.facebook.com/FivesTv" target="_blank">
+                    <span class="icon is-medium has-text-white">
+                        <i class="fab fa-facebook"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/FivesTv" target="_blank">
+                    <span class="icon is-medium has-text-white">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/c/FivesTvFra" target="_blank">
+                    <span class="icon is-medium has-text-white">
+                       <i class="fab fa-youtube"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitch.tv/fivestv" target="_blank">
+                    <span class="icon is-medium has-text-white">
+                       <i class="fab fa-twitch"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/mrfiive/" target="_blank">
+                    <span class="icon is-medium has-text-white">
+                       <i class="fab fa-instagram"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://discordapp.com/invite/ar8rSgC" target="_blank">
+                    <span class="icon is-medium has-text-white">
+                      <i class="fab fa-discord"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://steamcommunity.com/groups/FivesTv" target="_blank">
+                    <span class="icon is-medium has-text-white">
+                      <i class="fab fa-steam"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    {#</section>#}
 </footer>
 
 {% block javascripts %}
