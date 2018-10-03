@@ -8,25 +8,25 @@
             <div class='carousel-container'>
                 <div class='carousel-item has-background is-active'>
                     <a href="https://server.nitrado.net/fre/location-de-serveur-de-jeux" target="_blank">
-                        <img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg">
+                        <img class="is-background" src="{{ asset('images/banner-1.jpg') }}" alt="Nitrado">
                         {#<div class="title">Nitrado</div>#}
                     </a>
                 </div>
                 <div class='carousel-item has-background'>
                     <a href="http://www.ouikos.com/fr/129-fives-tv" target="_blank">
-                        <img class="is-background" src="https://wikiki.github.io/images/singer.jpg" alt="">
+                        <img class="is-background" src="{{ asset('images/banner-2.jpg') }}" alt="Ouikos">
                         {#<div class="title">Ouikos</div>#}
                     </a>
                 </div>
                 <div class='carousel-item has-background'>
                     <a href="https://www.instant-gaming.com/en/?igr=FivesTv" target="_blank">
-                        <img class="is-background" src="https://wikiki.github.io/images/sushi.jpg">
+                        <img class="is-background" src="{{ asset('images/banner-3.jpg') }}" alt="Instant Gaming">
                         {#<div class="title">Instant Gaming</div>#}
                     </a>
                 </div>
                 <div class='carousel-item has-background'>
                     <a href="https://qanga.iolacorp.com/">
-                        <img class="is-background" src="https://wikiki.github.io/images/life.jpg">
+                        <img class="is-background" src="{{ asset('images/banner-4.jpg') }}" alt="Qanga">
                         {#<div class="title">Qanga</div>#}
                     </a>
                 </div>
@@ -43,11 +43,11 @@
 
         <section class="twitch-player">
             <iframe src="https://embed.twitch.tv?channel=fivestv&amp;theme=dark&amp;referrer=https%3A%2F%2Ffivestv.fr%2F"
-                    allowfullscreen="" scrolling="no" frameborder="0" allow="autoplay; fullscreen"></iframe>
+                    allowfullscreen="" scrolling="no" volume="0" frameborder="0" allow="autoplay; fullscreen"></iframe>
         </section>
 
-        <section>
-            {#<div class="container">#}
+        <section >
+            <div class="container">
             <ul class="stream-links">
                 <li><a href="https://www.twitch.tv/products/fivestv/ticket" target="_blank">
                         <h2>subscribe</h2>
@@ -66,10 +66,10 @@
                         <span>Accède aux rediffusions instantannées des lives !</span>
                     </a></li>
             </ul>
-            {#</div>#}
+            </div>
         </section>
 
-        <section class="section">
+        <section class="section container" style="background: red;">
             <section class="accordions">
                 <article class="accordion is-active">
                     <div class="accordion-header toggle">

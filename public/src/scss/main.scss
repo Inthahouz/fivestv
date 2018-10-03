@@ -25,11 +25,32 @@ $primary-invert: $pink-invert;
 @import "../../../node_modules/bulma-extensions/bulma-accordion/src/sass/index";
 
 header{
+  background: #000;
+  //display: flex;
+  //flex-direction: row;
+  //align-items: center;
+  position: relative;
 
   .logo{
+    width: 203px;
+    height: 100%;
     display: block;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .social-links{
+
+    .list{
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 
@@ -63,7 +84,7 @@ article{
 .carousel {
 
   .carousel-container {
-    max-height: 50vh;
+    max-height: 60vh;
   }
 }
 
@@ -119,5 +140,5 @@ iframe{
 //FOOTER
 
 footer{
-  background: blue;
+  background: #000;
 }
