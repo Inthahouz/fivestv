@@ -12,7 +12,7 @@
     "css-postcss": "postcss --use autoprefixer --output public/dist/css/main.css public/dist/css/main.css",
     "css-watch": "npm run css-build -- --watch",
     "deploy": "npm run css-deploy && npm run js-build",
-    "js-build": "babel public/src/js --out-dir public/dist/js ; concat -o public/dist/js/main.js node_modules/bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js node_modules/bulma-extensions/bulma-accordion/dist/js/bulma-accordion.min.js public/dist/js/main.js",
+    "js-build": "babel node_modules/bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js public/src/js/main.js --out-file public/dist/js/main.js",
     "js-watch": "npm run js-build -- --watch",
     "start": "npm-run-all --parallel css-watch js-watch"
   },

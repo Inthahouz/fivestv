@@ -4,7 +4,7 @@
 
 {% block body %}
     <article>
-        <div class='carousel carousel-animated carousel-animate-fade' data-autoplay="true">
+        <div class='hero-carousel carousel-animated carousel-animate-fade' data-autoplay="true">
             <div class='carousel-container'>
                 <div class='carousel-item has-background is-active'>
                     <a href="https://server.nitrado.net/fre/location-de-serveur-de-jeux" target="_blank">
@@ -32,12 +32,12 @@
                 </div>
             </div>
             {#<div class="carousel-navigation">#}
-                {#<div class="carousel-nav-left">#}
-                    {#<i class="fa fa-chevron-left" aria-hidden="true"></i>#}
-                {#</div>#}
-                {#<div class="carousel-nav-right">#}
-                    {#<i class="fa fa-chevron-right" aria-hidden="true"></i>#}
-                {#</div>#}
+            {#<div class="carousel-nav-left">#}
+            {#<i class="fa fa-chevron-left" aria-hidden="true"></i>#}
+            {#</div>#}
+            {#<div class="carousel-nav-right">#}
+            {#<i class="fa fa-chevron-right" aria-hidden="true"></i>#}
+            {#</div>#}
             {#</div>#}
         </div>
 
@@ -48,63 +48,69 @@
 
         <section class="grey">
             <div class="container">
-            <ul class="stream-links">
-                <li><a href="https://www.twitch.tv/products/fivestv/ticket" target="_blank">
-                        <h2>subscribe</h2>
-                        <span>Abonne-toi et obtiens plein d'avantage !</span>
-                    </a></li>
-                <li><a href="https://www.twitch.tv/bits" target="_blank">
-                        <h2>bits and badges</h2>
-                        <span>Soutien l'association, passe ton message en live et gagne des badges sur le chat !</span>
-                    </a></li>
-                <li><a href="https://streamlabs.com/fivestv" target="_blank">
-                        <h2>donation</h2>
-                        <span>Démontre ton soutien pour MrFive et contribue à la mise en place de ses projets !</span>
-                    </a></li>
-                <li><a href="https://www.twitch.tv/fivestv/videos/all" target="_blank">
-                        <h2>replay live</h2>
-                        <span>Accède aux rediffusions instantannées des lives !</span>
-                    </a></li>
-            </ul>
+                <ul class="stream-links">
+                    <li><a href="https://www.twitch.tv/products/fivestv/ticket" target="_blank">
+                            <h2>subscribe</h2>
+                            <span>Abonne-toi et obtiens plein d'avantage !</span>
+                        </a></li>
+                    <li><a href="https://www.twitch.tv/bits" target="_blank">
+                            <h2>bits and badges</h2>
+                            <span>Soutien l'association, passe ton message en live et gagne des badges sur le chat !</span>
+                        </a></li>
+                    <li><a href="https://streamlabs.com/fivestv" target="_blank">
+                            <h2>donation</h2>
+                            <span>Démontre ton soutien pour MrFive et contribue à la mise en place de ses projets !</span>
+                        </a></li>
+                    <li><a href="https://www.twitch.tv/fivestv/videos/all" target="_blank">
+                            <h2>replay live</h2>
+                            <span>Accède aux rediffusions instantannées des lives !</span>
+                        </a></li>
+                </ul>
             </div>
         </section>
 
-        <section class="section container" style="background: red;">
-            <section class="accordions">
-                <article class="accordion is-active">
-                    <div class="accordion-header toggle">
-                        <p>Hello World</p>
-                    </div>
-                    <div class="accordion-body">
-                        <div class="accordion-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-                        </div>
-                    </div>
-                </article>
-                <article class="accordion">
-                    <div class="accordion-header">
-                        <p>Hello World</p>
-                        <button class="toggle" aria-label="toggle"></button>
-                    </div>
-                    <div class="accordion-body">
-                        <div class="accordion-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-                        </div>
-                    </div>
-                </article>
-                <article class="accordion">
-                    <div class="accordion-header">
-                        <p>Hello World</p>
-                        <button class="toggle" aria-label="toggle"></button>
-                    </div>
-                    <div class="accordion-body">
-                        <div class="accordion-content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-                        </div>
-                    </div>
-                </article>
-            </section>
+        <section class="section container accordion-block">
+            <h3>apprends en un peu plus sur nous !</h3>
+            <button class="accordion"><span></span>pourquoi avoir créé la five'stv ?</button>
+            <div class="panel">
+                <p>Afin de prouver à tous que l’handicap n’est pas une barrière et que nous pouvons en faire une force,
+                    mais également de propager une mixité conséquente dans le monde du jeu vidéo !</p>
+            </div>
 
+            <button class="accordion">quel est le but de la five'stv ?</button>
+            <div class="panel">
+                <p>Son but est de réunir des femmes et des hommes en situation de handicap ou non afin de créer une
+                    mixité dans le monde du gaming et du eSport.</p>
+            </div>
+
+            <button class="accordion">pourquoi s'interesser au monde du handicap ?</button>
+            <div class="panel">
+                <p>Le handicap dans le monde du jeu vidéo est très répandu et touche de nombreux joueurs, mais il n’est
+                    pratiquement pas mis en avant et peu de personnes en sont informées. Une grande partie de nos membre
+                    est touchée directement ou indirectement par le handicap et il est important de répandre les
+                    informations sur ce sujet !</p>
+            </div>
+
+            <button class="accordion">je suis un gamer, en quoi puis-je aider la five'stv ?</button>
+            <div class="panel">
+                <p>Vous pouvez nous aider simplement en parlant de nous autour de vous afin de sensibiliser d’autres
+                    personnes, nous rejoindre et partager notre cause, ou bien en vous investissant dans notre
+                    association et en nous aidant à gérer les différentes plateformes proposées.</p>
+            </div>
+
+            <button class="accordion">je suis un gamer en situation de handicap, qu'est-ce que la five'stv peut
+                m'apporter ?
+            </button>
+            <div class="panel">
+                <p>Elle peut vous donner l’opportunité de vous lancer là ou vous n’osez pas encore mettre les pieds :
+                    Stream, eSport, etc.. mais également vous intégrer dans une communauté multigaming ouverte et
+                    soudée.</p>
+            </div>
+            <button class="accordion">je souhaite rejoindre la five'stv, comment dois-je faire ?</button>
+            <div class="panel">
+                <p>Pour nous rejoindre il vous suffit de nous contacter via nos réseaux sociaux ou directement via notre
+                    site ou discord.</p>
+            </div>
         </section>
     </article>
 {% endblock %}
