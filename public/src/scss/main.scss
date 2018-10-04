@@ -157,6 +157,7 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 20px;
 
   &:before{
     content: "";
@@ -165,7 +166,7 @@ iframe {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url(../../images/logo-bkg.png) no-repeat bottom center;
+    background: url(../../images/logo-bkg.png) no-repeat center center;
     background-size: contain;
     width: 100%;
     height: 100%;
@@ -267,8 +268,8 @@ footer {
   }
 
   .carousel-footer {
-    width: 200px;
-    height: 180px;
+    width: 170px;
+    height: 150px;
     margin-right: 15px;
   }
 
