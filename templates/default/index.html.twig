@@ -4,43 +4,46 @@
 
 {% block body %}
     <article>
-        <div class='hero-carousel carousel-animated carousel-animate-fade' data-autoplay="true">
+        <div class='carousel carousel-animated carousel-animate-slide' data-autoplay="true">
             <div class='carousel-container'>
                 <div class='carousel-item has-background is-active'>
                     <a href="https://server.nitrado.net/fre/location-de-serveur-de-jeux" target="_blank">
-                        <img class="is-background" src="{{ asset('images/banner-1.jpg') }}" alt="Nitrado">
-                        {#<div class="title">Nitrado</div>#}
+                        <img class="is-background" src="{{ asset('images/banner-1.jpg') }}" alt="" width="640"
+                             height="310">
                     </a>
                 </div>
                 <div class='carousel-item has-background'>
                     <a href="http://www.ouikos.com/fr/129-fives-tv" target="_blank">
-                        <img class="is-background" src="{{ asset('images/banner-2.jpg') }}" alt="Ouikos">
-                        {#<div class="title">Ouikos</div>#}
+                        <img class="is-background" src="{{ asset('images/banner-2.jpg') }}" alt="" width="640"
+                             height="310"/>
                     </a>
                 </div>
                 <div class='carousel-item has-background'>
                     <a href="https://www.instant-gaming.com/en/?igr=FivesTv" target="_blank">
-                        <img class="is-background" src="{{ asset('images/banner-3.jpg') }}" alt="Instant Gaming">
-                        {#<div class="title">Instant Gaming</div>#}
+                        <img class="is-background" src="{{ asset('images/banner-3.jpg') }}" alt="" width="640"
+                             height="310"/>
                     </a>
                 </div>
                 <div class='carousel-item has-background'>
                     <a href="https://qanga.iolacorp.com/" target="_blank">
-                        <img class="is-background" src="{{ asset('images/banner-4.jpg') }}" alt="Qanga">
-                        {#<div class="title">Qanga</div>#}
+                        <img class="is-background" src="{{ asset('images/banner-4.jpg') }}" alt="" width="640"
+                             height="310"/>
                     </a>
                 </div>
             </div>
-            {#<div class="carousel-navigation">#}
-            {#<div class="carousel-nav-left">#}
-            {#<i class="fa fa-chevron-left" aria-hidden="true"></i>#}
-            {#</div>#}
-            {#<div class="carousel-nav-right">#}
-            {#<i class="fa fa-chevron-right" aria-hidden="true"></i>#}
-            {#</div>#}
-            {#</div>#}
+            <div class="carousel-navigation">
+                <div class="carousel-nav-left">
+                        <span class="icon has-text-white">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </span>
+                </div>
+                <div class="carousel-nav-right">
+                        <span class="icon has-text-white">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </span>
+                </div>
+            </div>
         </div>
-
         <section class="twitch-player">
             <iframe src="https://embed.twitch.tv?channel=fivestv&amp;theme=dark&amp;referrer=https%3A%2F%2Ffivestv.fr%2F"
                     allowfullscreen="" scrolling="no" frameborder="0" allow="autoplay; fullscreen"></iframe>
@@ -50,20 +53,40 @@
             <div class="container">
                 <ul class="stream-links">
                     <li><a href="https://www.twitch.tv/products/fivestv/ticket" target="_blank">
-                            <h2>subscribe</h2>
-                            <span>Abonne-toi et obtiens plein d'avantage !</span>
+                            <figure>
+                                <img src="{{ asset('images/btn-4.png') }}" alt="">
+                                <figcaption>
+                                    <h2>subscribe</h2>
+                                    <span>Abonne-toi et obtiens plein d'avantage !</span>
+                                </figcaption>
+                            </figure>
                         </a></li>
                     <li><a href="https://www.twitch.tv/bits" target="_blank">
-                            <h2>bits and badges</h2>
-                            <span>Soutien l'association, passe ton message en live et gagne des badges sur le chat !</span>
+                            <figure>
+                                <img src="{{ asset('images/btn-2.png') }}" alt="">
+                                <figcaption>
+                                    <h2>bits and badges</h2>
+                                    <span>Soutien l'association, passe ton message en live et gagne des badges sur le chat !</span>
+                                </figcaption>
+                            </figure>
                         </a></li>
                     <li><a href="https://streamlabs.com/fivestv" target="_blank">
-                            <h2>donation</h2>
-                            <span>Démontre ton soutien pour MrFive et contribue à la mise en place de ses projets !</span>
+                            <figure>
+                                <img src="{{ asset('images/btn-1.png') }}" alt="">
+                                <figcaption>
+                                    <h2>donation</h2>
+                                    <span>Démontre ton soutien pour MrFive et contribue à la mise en place de ses projets !</span>
+                                </figcaption>
+                            </figure>
                         </a></li>
                     <li><a href="https://www.twitch.tv/fivestv/videos/all" target="_blank">
-                            <h2>replay live</h2>
-                            <span>Accède aux rediffusions instantannées des lives !</span>
+                            <figure>
+                                <img src="{{ asset('images/btn-3.png') }}" alt="">
+                                <figcaption>
+                                    <h2>replay live</h2>
+                                    <span>Accède aux rediffusions instantannées des lives !</span>
+                                </figcaption>
+                            </figure>
                         </a></li>
                 </ul>
             </div>

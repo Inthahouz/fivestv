@@ -23,6 +23,23 @@ $primary-invert: $pink-invert;
 @import "../../../node_modules/bulma/bulma";
 @import "../../../node_modules/bulma-extensions/bulma-carousel/src/sass/index";
 
+@-webkit-keyframes pulseRedButton{
+  0%{ box-shadow: 0 0 0 0 #8e0714 }
+}
+
+@-moz-keyframes pulseRedButton{
+  0%{ box-shadow: 0 0 0 0 #8e0714 }
+}
+
+@-o-keyframes pulseRedButton{
+  0%{ box-shadow: 0 0 0 0 #8e0714 }
+}
+
+@keyframes pulseRedButton{
+  0%{ box-shadow: 0 0 0 0 #8e0714 }
+}
+
+
 header {
   background: #000;
   //display: flex;
@@ -114,36 +131,71 @@ iframe {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   background: #2e2e2ef2;
   padding: 20px;
 
   li {
     font-size: 14px;
-    text-align: center;
+    background: pink;
     margin: 10px;
     width: calc((100% / 4) - 20px);
+
+      &:hover{
+        animation: pulseRedButton 1s;
+        box-shadow: 0 0 0 1em rgba(255,255,255, 0);
+      }
   }
 
   a {
     text-decoration: none;
     color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    &:hover{
+      animation: pulseYellowButton 1s;
+      box-shadow: 0 0 0 1em rgba(255,255,255, 0);
+    }
+
+    figure{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      background: #282828;
+      padding: 10px;
+      height: 100%;
+
+      img{
+        max-width: 60px;
+        height: auto;
+        background: #8e0714;
+      }
+
+      figcaption{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+      }
+    }
 
     h2 {
       width: 100%;
       display: block;
-      border: 1px solid #fff;
-      padding: 10px;
+      //border: 1px solid #fff;
+      //padding: 10px;
       text-transform: uppercase;
       //color: #fff;
     }
 
-    span {
-      display: block;
-      margin-top: 10px;
-      text-align: left;
-      //color: #fff;
-    }
+    //span {
+    //  display: block;
+    //  margin-top: 10px;
+    //  text-align: left;
+    //  //color: #fff;
+    //}
   }
 }
 
@@ -239,6 +291,14 @@ iframe {
 footer {
   background: #000;
 
+  a{
+    color: #fff;
+
+    &:hover{
+      color: #8e0714;
+    }
+  }
+
   .top-footer {
     display: flex;
     flex-direction: row;
@@ -260,6 +320,10 @@ footer {
     &.left {
       right: auto;
       left: 0;
+
+      li{
+        margin: 0 10px;
+      }
     }
   }
 
