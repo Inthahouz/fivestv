@@ -20,6 +20,7 @@ $primary: $pink;
 $primary-invert: $pink-invert;
 // 4. Import the rest of Bulma
 */
+
 @import "../../../node_modules/bulma/bulma";
 @import "../../../node_modules/bulma-extensions/bulma-carousel/src/sass/index";
 
@@ -42,9 +43,6 @@ $primary-invert: $pink-invert;
 
 header {
   background: #000;
-  //display: flex;
-  //flex-direction: row;
-  //align-items: center;
   position: relative;
   padding: 10px 0;
 
@@ -83,16 +81,8 @@ aside {
 
 section {
 
-  display: block;
-  //background: green;
-  //min-height: 100vh;
-  //position: relative;
-  //overflow: hidden;
-  //display: flex;
-  //flex-direction: column;
-
   &.grey {
-    background: #2e2e2ef2;
+    background: #2e2e2e;
   }
 }
 
@@ -103,21 +93,58 @@ section {
   }
 }
 
+.column{
+
+  &.bkg-red {
+   background: #8e0714;
+    text-align: center;
+  }
+}
+
+.columns:not(:last-child){
+  margin-bottom: 0;
+}
+
 article {
   background: #000;
-  //min-height: 100vh;
 }
 
 //CAROUSEL
 
 .carousel {
+  z-index: 1;
 
   .carousel-container {
     max-height: 60vh;
   }
+
+  .carousel-navigation{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .carousel-nav-left,
+  .carousel-nav-right{
+    cursor: pointer;
+  }
 }
 
 //TWITCH
+
+.stream-online-only {
+  display: none;
+  padding: 0 0 0 20px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+body.stream-online {
+  .stream-online-only { display: flex; }
+  .stream-offline-only { display: none; }
+}
 
 iframe {
   width: 100%;
@@ -132,12 +159,10 @@ iframe {
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  background: #2e2e2ef2;
   padding: 20px;
 
   li {
     font-size: 14px;
-    background: pink;
     margin: 10px;
     width: calc((100% / 4) - 20px);
 
@@ -184,18 +209,8 @@ iframe {
     h2 {
       width: 100%;
       display: block;
-      //border: 1px solid #fff;
-      //padding: 10px;
       text-transform: uppercase;
-      //color: #fff;
     }
-
-    //span {
-    //  display: block;
-    //  margin-top: 10px;
-    //  text-align: left;
-    //  //color: #fff;
-    //}
   }
 }
 
@@ -272,10 +287,6 @@ iframe {
     }
   }
 
-  //.active, .accordion:hover {
-  //  background-color: #ccc;
-  //}
-
   .panel {
     margin-bottom: 0;
     padding: 0 18px;
@@ -342,5 +353,6 @@ footer {
     flex-direction: row;
   }
 }
+
 
 

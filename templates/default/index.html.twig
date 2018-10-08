@@ -44,6 +44,21 @@
                 </div>
             </div>
         </div>
+
+        {#ONLINE#}
+        <section class="grey columns section stream-online-only">
+            <div class="column is-three-quarters">
+                <h2 id="stream-title"></h2>
+            </div>
+            <div class="column bkg-red">
+                <h3>Nombre de viewers : <span id="stream-viewers"></span></h3>
+            </div>
+        </section>
+        {#OFFLINE#}
+        <section class="grey section stream-offline-only">
+            <h2>Sorry les mecs jsuis pas co</h2>
+        </section>
+
         <section class="twitch-player">
             <iframe src="https://embed.twitch.tv?channel=fivestv&amp;theme=dark&amp;referrer=https%3A%2F%2Ffivestv.fr%2F"
                     allowfullscreen="" scrolling="no" frameborder="0" allow="autoplay; fullscreen"></iframe>
