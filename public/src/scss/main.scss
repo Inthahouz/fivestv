@@ -1,358 +1,47 @@
 @charset "utf-8";
 
-// Customization
-// You can easily customize Bulma with your own variables.
-// Just uncomment the following block to see the result.
-/*
-// 1. Import the initial variables
-@import "../node_modules/bulma/sass/utilities/initial-variables";
-// 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #06bcef;
-// Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
-// Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
-// 4. Import the rest of Bulma
-*/
+// Device breakpoints
+$desktop-wide: 2560;
+$desktop-large: 1920;
+$desktop-medium: 1440;
+$desktop-small: 1280;
+$tablet-landscape: 1024;
+$tablet-portrait: 768;
+$mobile-landscape: 640;
+$mobile-portrait: 360;
+
+$white: #FFFFFF;
+//$white-bis: #F2F0F0;
+
+//$grey-light: #DEDEDE;
+$grey: #2e2e2e;
+//$grey-dark: #606060;
+$black: #000000;
+
+//$purple: #671C3D;
+//$primary: $purple;
+
+$red: #8e0714;
+$danger: $red;
+
+//$blue: #0CBAEE;
+//$info: $blue;
+
+//$yellow: #FCC749;
+//$warning: $yellow;
+
+//$green: #30A878;
+//$success: $green;
+
 
 @import "../../../node_modules/bulma/bulma";
 @import "../../../node_modules/bulma-extensions/bulma-carousel/src/sass/index";
 
-@-webkit-keyframes pulseRedButton{
-  0%{ box-shadow: 0 0 0 0 #8e0714 }
-}
-
-@-moz-keyframes pulseRedButton{
-  0%{ box-shadow: 0 0 0 0 #8e0714 }
-}
-
-@-o-keyframes pulseRedButton{
-  0%{ box-shadow: 0 0 0 0 #8e0714 }
-}
-
-@keyframes pulseRedButton{
-  0%{ box-shadow: 0 0 0 0 #8e0714 }
-}
+@import "commons";
+@import "homepage";
+@import "qsn";
 
 
-header {
-  background: #000;
-  position: relative;
-  padding: 10px 0;
-
-  .logo {
-    width: 203px;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .social-links {
-
-    .list {
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-}
-
-aside {
-  background: yellow;
-  z-index: 2;
-  top: 0;
-  left: 100%;
-  width: 200px;
-  height: 100vh;
-  display: none;
-}
-
-section {
-
-  &.grey {
-    background: #2e2e2e;
-  }
-}
-
-.section {
-
-  &.no-padding {
-    padding: 0 20px;
-  }
-}
-
-.column{
-
-  &.bkg-red {
-   background: #8e0714;
-    text-align: center;
-  }
-}
-
-.columns:not(:last-child){
-  margin-bottom: 0;
-}
-
-article {
-  background: #000;
-}
-
-//CAROUSEL
-
-.carousel {
-  z-index: 1;
-
-  .carousel-container {
-    max-height: 60vh;
-  }
-
-  .carousel-navigation{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    justify-content: space-between;
-    z-index: 2;
-  }
-
-  .carousel-nav-left,
-  .carousel-nav-right{
-    cursor: pointer;
-  }
-}
-
-//TWITCH
-
-.stream-online-only {
-  display: none;
-  padding: 0 0 0 20px;
-  margin: 0 auto;
-  color: #fff;
-}
-
-body.stream-online {
-  .stream-online-only { display: flex; }
-  .stream-offline-only { display: none; }
-}
-
-iframe {
-  width: 100%;
-  height: auto;
-  min-height: 780px;
-}
-
-.stream-links {
-  font-size: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: stretch;
-  padding: 20px;
-
-  li {
-    font-size: 14px;
-    margin: 10px;
-    width: calc((100% / 4) - 20px);
-
-      &:hover{
-        animation: pulseRedButton 1s;
-        box-shadow: 0 0 0 1em rgba(255,255,255, 0);
-      }
-  }
-
-  a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    width: 100%;
-    height: 100%;
-
-    &:hover{
-      animation: pulseYellowButton 1s;
-      box-shadow: 0 0 0 1em rgba(255,255,255, 0);
-    }
-
-    figure{
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      background: #282828;
-      padding: 10px;
-      height: 100%;
-
-      img{
-        max-width: 60px;
-        height: auto;
-        background: #8e0714;
-      }
-
-      figcaption{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 10px;
-      }
-    }
-
-    h2 {
-      width: 100%;
-      display: block;
-      text-transform: uppercase;
-    }
-  }
-}
-
-//ACCORDION
-
-.accordion-block{
-  color: #fff;
-  position: relative;
-  min-height: 700px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 20px;
-
-  &:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url(../../images/logo-bkg.png) no-repeat center center;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
-  }
-
-  h3{
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: bold;
-  }
-
-  .accordion {
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: relative;
-
-    &:before{
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: -25px;
-      transform: translateY(-50%);
-      width: 25px;
-      height: 26px;
-      background: url(../../images/cross-plus.png) no-repeat center;
-      background-size: cover;
-      transition: all 0.2s ease-out;
-    }
-
-    &.active{
-
-      &:before{
-        width: 25px;
-        height: 6px;
-        background: url(../../images/cross-less.png) no-repeat center;
-        transition: all 0.2s ease-out;
-      }
-    }
-  }
-
-  .panel {
-    margin-bottom: 0;
-    padding: 0 18px;
-    color: #B1B1B1;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-}
-
-//FOOTER
-
-footer {
-  background: #000;
-
-  a{
-    color: #fff;
-
-    &:hover{
-      color: #8e0714;
-    }
-  }
-
-  .top-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .bottom-footer {
-    position: relative;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-
-  .absolute {
-    position: absolute;
-    bottom: 20px;
-    right: 0;
-
-    &.left {
-      right: auto;
-      left: 0;
-
-      li{
-        margin: 0 10px;
-      }
-    }
-  }
-
-  .link {
-    text-align: center;
-  }
-
-  .carousel-footer {
-    width: 170px;
-    height: 150px;
-    margin-right: 15px;
-  }
-
-  .list-footer {
-    display: flex;
-    flex-direction: row;
-  }
-}
 
 
 

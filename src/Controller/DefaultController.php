@@ -23,4 +23,20 @@ class DefaultController extends AbstractController
         return $this->render('default/news.html.twig');
     }
 
+    /**
+     * @Route("/qui-sommes-nous", name="news")
+     */
+    public function qsn()
+    {
+        return $this->render('default/qui-sommes-nous.html.twig');
+    }
+
+    /**
+     * @Route("/devenir-membre", name="membres")
+     */
+    public function membres()
+    {
+        return $this->render('default/devenir-membre.html.twig');
+    }
+
 }

@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@-webkit-keyframes pulseRedButton{
+  0%{ box-shadow: 0 0 0 0 $red }
+}
+
+@-moz-keyframes pulseRedButton{
+  0%{ box-shadow: 0 0 0 0 $red }
+}
+
+@-o-keyframes pulseRedButton{
+  0%{ box-shadow: 0 0 0 0 $red }
+}
+
+@keyframes pulseRedButton{
+  0%{ box-shadow: 0 0 0 0 $red }
+}
+
+section {
+
+  &.grey {
+    background: $grey;
+  }
+}
+
+.section {
+
+  &.no-padding {
+    padding: 0 20px;
+  }
+}
+
+.column{
+
+  &.bkg-red {
+    background: $red;
+    text-align: center;
+  }
+}
+
+.columns:not(:last-child){
+  margin-bottom: 0;
+}
+
+article {
+  background: $black;
+}
+
+header {
+  background: $black;
+  position: relative;
+  padding: 10px 0;
+
+  .logo {
+    width: 203px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .social-links {
+
+    .list {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+//CAROUSEL
+
+.carousel {
+  z-index: 1;
+
+  .carousel-container {
+    max-height: 60vh;
+  }
+
+  .carousel-navigation{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: space-between;
+    z-index: 2;
+  }
+
+  .carousel-nav-left,
+  .carousel-nav-right{
+    cursor: pointer;
+  }
+}
+
+//FOOTER
+
+footer {
+  background: $black;
+
+  a{
+    color: $white;
+
+    &:hover{
+      color: $red;
+    }
+  }
+
+  .top-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottom-footer {
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .absolute {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+
+    &.left {
+      right: auto;
+      left: 0;
+
+      li{
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .link {
+    text-align: center;
+  }
+
+  .carousel-footer {
+    width: 170px;
+    height: 150px;
+    margin-right: 15px;
+  }
+
+  .list-footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: $tablet-landscape+1px){
+
+  .stream-links{
+
+    li{
+      width: calc((100% / 2) - 20px);
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-landscape+1px){
+
+  .stream-links{
+
+    li{
+      width: 100%;
+    }
+  }
+}
+
