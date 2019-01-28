@@ -10,6 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<nav id="nav">
+    <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/qui-sommes-nous">Qui sommes-nous</a></li>
+        <li><a href="/devenir-membre">Devenir membre</a></li>
+        {#<li><a href="/">Accueil</a></li>#}
+    </ul>
+</nav>
+
 <header>
     <a href="/" class="logo"><img src="{{ asset('images/logo-full.png') }}" alt="Logo Five'sTV"></a>
     <div class="social-links">
@@ -66,16 +75,6 @@
         </ul>
     </div>
 </header>
-{#<aside>#}
-{#<nav>#}
-{#<a href=""></a>#}
-{#<ul class="">#}
-{#<li><a href="#">Accueil</a></li>#}
-{#<li><a href="#">Qui sommes nous</a></li>#}
-{#<li><a href="#">Nos streamers</a></li>#}
-{#</ul>#}
-{#</nav>#}
-{#</aside>#}
 
 <section>
     {% block body %}{% endblock %}
