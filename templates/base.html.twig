@@ -12,14 +12,17 @@
 <body>
 <nav id="nav">
     <ul>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/qui-sommes-nous">Qui sommes-nous</a></li>
-        <li><a href="/devenir-membre">Devenir membre</a></li>
-        {#<li><a href="/">Accueil</a></li>#}
+        <li><a href="/" class="has-text-white">Accueil</a></li>
+        <li><a href="/qui-sommes-nous" class="has-text-white">Qui sommess-nous</a></li>
+        <li><a href="/notre-histoire" class="has-text-white">FiveStory</a></li>
+        <li><a href="/devenir-membre" class="has-text-white">Devenir membre</a></li>
     </ul>
 </nav>
 
 <header>
+    <div id="burger">
+        {#<img src="{{ asset('images/burger.png') }}" alt="">#}
+    </div>
     <a href="/" class="logo"><img src="{{ asset('images/logo-full.png') }}" alt="Logo Five'sTV"></a>
     <div class="social-links">
         <ul class="list">

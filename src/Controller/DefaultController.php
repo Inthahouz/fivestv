@@ -24,7 +24,7 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @Route("/qui-sommes-nous", name="news")
+     * @Route("/qui-sommes-nous", name="qui-sommes-nous")
      */
     public function qsn()
     {
@@ -37,6 +37,14 @@ class DefaultController extends AbstractController
     public function membres()
     {
         return $this->render('default/devenir-membre.html.twig');
+    }
+
+    /**
+     * @Route("/notre-histoire", name="histoire")
+     */
+    public function histoire()
+    {
+        return $this->render('default/notre-histoire.html.twig');
     }
 
 }
