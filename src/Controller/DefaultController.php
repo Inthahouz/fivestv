@@ -47,4 +47,18 @@ class DefaultController extends AbstractController
         return $this->render('default/notre-histoire.html.twig');
     }
 
+    /**
+     * @Route("/nos-serveurs", name="serveurs")
+     */
+    public function serveurs()
+    {
+        return $this->render('default/nos-serveurs.html.twig');
+    }
+    /**
+     * @Route("/nos-communautes", name="communautes")
+     */
+    public function communautes()
+    {
+        return $this->render('default/nos-communautes.html.twig');
+    }
 }

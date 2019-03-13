@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Qui Somme Nous{% endblock %}
+
+{% block body %}
+
+    <section class="hero is-large">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-uppercase has-text-danger has-text-white">
+                    Nos communautés
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <article class="section qsn">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <ul class="has-text-white">
+                        <li class="has-text-weight-bold">PC</li>
+                        <li class="has-text-weight-bold">Mobile</li>
+                    </ul>
+                </div>
+                <div class="card-image">
+                    <img src="{{ asset('images/logos/discord.png') }}" alt="Discord">
+                </div>
+                <div class="card-content">
+                    <p class="has-text-white has-text-centered">
+                        Service de messagerie vocale et texte tout-en-un pour gamers, gratuit, sécurisé et sécuritaire,
+                        fonctionnant avec vos ordinateurs et smartphones. Arrêtez de payer pour des serveurs Teamspeak,
+                        arrêtez de souffrir avec Skype. Simplifiez-vous la vie.
+                    </p>
+                </div>
+                <img src="{{ asset('images/logos/discord.png') }}" alt="">
+            </div>
+        </div>
+    </article>
+
+{% endblock %}

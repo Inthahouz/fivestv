@@ -15,8 +15,6 @@
 
 			this.body.find('.slideshow').each(function() {
 
-			    console.log('find');
-
 				var $slideshow = $(this),
 					$figcaption = $slideshow.parents('.section-slideshow').find('.figcaption'),
 					$nav = $slideshow.parents('.section-slideshow').find('.nav'),

@@ -59,6 +59,34 @@ section {
   margin-bottom: 40px;
 }
 
+.list-page{
+
+  li{
+    list-style-type: circle;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+}
+
+.card{
+  width: calc(100% /4);
+  background: $black;
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    li{
+      font-size: 12px;
+      margin: 10px;
+      background: $red;
+      padding: 2px 4px;
+    }
+  }
+}
+
 #nav{
   position: fixed;
   z-index: 2;
@@ -116,7 +144,7 @@ section {
 }
 
 article {
-  background: $black;
+  background: $grey;
 }
 
 header {
